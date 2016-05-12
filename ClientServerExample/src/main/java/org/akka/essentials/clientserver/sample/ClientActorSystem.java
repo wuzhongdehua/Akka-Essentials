@@ -1,14 +1,6 @@
 package org.akka.essentials.clientserver.sample;
 
-import static akka.actor.Actors.poisonPill;
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Address;
-import akka.actor.AddressFromURIString;
-import akka.actor.Deploy;
-import akka.actor.Props;
-import akka.actor.UntypedActor;
-import akka.actor.UntypedActorFactory;
+import akka.actor.*;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.kernel.Bootable;
@@ -75,7 +67,11 @@ public class ClientActorSystem implements Bootable {
 		Address addr = new Address("akka", "ServerSys", "127.0.0.1", 2552);
 
 		// creating the ServerActor on the specified remote server
-		final ActorRef serverActor = system.actorOf(new Props(ServerActor.class)
+		final ActorRef serverActor = system.actorOf(new Props(new UntypedActorFactory() {
+			public Actor create() throws Exception {
+				return new ServerActor();
+			}
+		})
 				.withDeploy(new Deploy(new RemoteScope(addr))));
 
 		// create a local actor and pass the reference of the remote actor
@@ -107,7 +103,11 @@ public class ClientActorSystem implements Bootable {
 				.parse("akka://ServerSys@127.0.0.1:2552");
 
 		// creating the ServerActor on the specified remote server
-		final ActorRef serverActor = system.actorOf(new Props(ServerActor.class)
+		final ActorRef serverActor = system.actorOf(new Props(new UntypedActorFactory() {
+			public Actor create() throws Exception {
+				return new ServerActor();
+			}
+		})
 				.withDeploy(new Deploy(new RemoteScope(addr))));
 
 		// create a local actor and pass the reference of the remote actor
@@ -147,7 +147,11 @@ public class ClientActorSystem implements Bootable {
 		log.info("Creating a actor with remote deployment");
 
 		// creating the ServerActor on the specified remote server
-		final ActorRef serverActor = system.actorOf(new Props(ServerActor.class),"remoteServerActor");
+		final ActorRef serverActor = system.actorOf(new Props(new UntypedActorFactory() {
+			public Actor create() throws Exception {
+				return new ServerActor();
+			}
+		}),"remoteServerActor");
 
 		// create a local actor and pass the reference of the remote actor
 		actor = system.actorOf(new Props(new UntypedActorFactory() {
@@ -162,7 +166,7 @@ public class ClientActorSystem implements Bootable {
 	public void shutdown() {
 		
 		log.info("Sending PoisonPill to ServerActorSystem");
-		remoteActor.tell(poisonPill());
+		remoteActor.tell(PoisonPill.getInstance());
 		
 		log.info("Shutting down the ClientActorSystem");
 		system.shutdown();

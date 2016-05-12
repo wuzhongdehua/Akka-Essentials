@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AntConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="CodeStyleManager">
     <option name="USE_DEFAULT_CODE_STYLE_SCHEME" value="true" />
     <option name="CODE_STYLE_SCHEME" value="" />
@@ -23,10 +19,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="ActorMessagingExample" />
         <module name="AkkaCustomExtension" />
+        <module name="AkkaDispatcherExample" />
         <module name="AkkaPersistentExample" />
+        <module name="AkkaRouterExample" />
+        <module name="AkkaSerializerExample" />
         <module name="AkkaUnitTest" />
         <module name="AkkaWithZeroMQ" />
+        <module name="AkkSTMExample" />
+        <module name="FirstAkkaApplication" />
         <module name="LocalNodeApp" />
         <module name="MailBox" />
         <module name="org-akka-essentials-clientserver-sample" />
@@ -37,50 +39,8 @@
         <module name="RemoteNodeApp" />
         <module name="TypedActorExample" />
       </profile>
-      <profile default="false" name="Annotation profile for ActorMessagingExample" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="ActorMessagingExample" />
-      </profile>
-      <profile default="false" name="Annotation profile for AkkaSerializerExample" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="AkkaSerializerExample" />
-      </profile>
-      <profile default="false" name="Annotation profile for AkkaDispatcherExample" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="AkkaDispatcherExample" />
-      </profile>
-      <profile default="false" name="Annotation profile for FirstAkkaApplication" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="FirstAkkaApplication" />
-      </profile>
-      <profile default="false" name="Annotation profile for AkkSTMExample" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="AkkSTMExample" />
-      </profile>
-      <profile default="false" name="Annotation profile for AkkaRouterExample" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="AkkaRouterExample" />
-      </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
       <module name="ActorMessagingExample" target="1.7" />
       <module name="AkkaCustomExtension" target="1.5" />
       <module name="AkkaDispatcherExample" target="1.7" />
@@ -105,9 +65,11 @@
   </component>
   <component name="CopyrightManager" default="" />
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ActorMessagingExample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AkkaCustomExtension" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AkkaDispatcherExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AkkaPersistentExample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/AkkaRouterExample" charset="UTF-8" />
@@ -125,12 +87,15 @@
     <file url="file://$PROJECT_DIR$/WordCountMapReduce" charset="UTF-8" />
   </component>
   <component name="EntryPointsManager">
-    <entry_points />
+    <entry_points version="2.0" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="PRINT_LINE_NUMBERS" value="false" />
     <option name="OPEN_IN_BROWSER" value="false" />
     <option name="OUTPUT_DIRECTORY" />
+  </component>
+  <component name="HighlightingAdvisor">
+    <option name="TYPE_AWARE_HIGHLIGHTING_ENABLED" value="false" />
   </component>
   <component name="ImportConfiguration">
     <option name="VENDOR" />
@@ -200,9 +165,10 @@
       <module fileurl="file://$PROJECT_DIR$/WordCountMapReduce/org.akka.essentials.wc.mapreduce.example.iml" filepath="$PROJECT_DIR$/WordCountMapReduce/org.akka.essentials.wc.mapreduce.example.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="AkkaSerializerExample,AkkSTMExample,FirstAkkaApplication,AkkaDispatcherExample,ActorMessagingExample" />
+    <option name="optimiseBytecode" value="true" />
+    <profile name="Maven 1" modules="AkkaSerializerExample,ActorMessagingExample,AkkSTMExample,FirstAkkaApplication,AkkaDispatcherExample" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
@@ -296,28 +262,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.typesafe.akka:akka-actor:2.0.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor/2.0.1/akka-actor-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor/2.0.1/akka-actor-2.0.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor/2.0.1/akka-actor-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-actor:2.0.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor/2.0.2/akka-actor-2.0.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor/2.0.2/akka-actor-2.0.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor/2.0.2/akka-actor-2.0.2-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.typesafe.akka:akka-actor_2.10:2.1.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2.jar!/" />
@@ -327,17 +271,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-actor_2.10:2.1.4">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.4/akka-actor_2.10-2.1.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.typesafe.akka:akka-actor_2.10:2.3.10">
@@ -362,37 +295,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-agent_2.10/2.1.2/akka-agent_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.typesafe.akka:akka-file-mailbox:2.0.2">
+    <library name="Maven: com.typesafe.akka:akka-file-mailbox_2.10:2.1.2">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-file-mailbox/2.0.2/akka-file-mailbox-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-file-mailbox_2.10/2.1.2/akka-file-mailbox_2.10-2.1.2.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-file-mailbox/2.0.2/akka-file-mailbox-2.0.2-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-file-mailbox_2.10/2.1.2/akka-file-mailbox_2.10-2.1.2-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-file-mailbox/2.0.2/akka-file-mailbox-2.0.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-kernel:2.0.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel/2.0.1/akka-kernel-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel/2.0.1/akka-kernel-2.0.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel/2.0.1/akka-kernel-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-kernel:2.0.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel/2.0.2/akka-kernel-2.0.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel/2.0.2/akka-kernel-2.0.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel/2.0.2/akka-kernel-2.0.2-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-file-mailbox_2.10/2.1.2/akka-file-mailbox_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.typesafe.akka:akka-kernel_2.10:2.1.2">
@@ -406,26 +317,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel_2.10/2.1.2/akka-kernel_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.typesafe.akka:akka-kernel_2.10:2.1.4">
+    <library name="Maven: com.typesafe.akka:akka-mailboxes-common_2.10:2.1.2">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel_2.10/2.1.4/akka-kernel_2.10-2.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-mailboxes-common_2.10/2.1.2/akka-mailboxes-common_2.10-2.1.2.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel_2.10/2.1.4/akka-kernel_2.10-2.1.4-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-mailboxes-common_2.10/2.1.2/akka-mailboxes-common_2.10-2.1.2-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-kernel_2.10/2.1.4/akka-kernel_2.10-2.1.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-mailboxes-common:2.0.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-mailboxes-common/2.0.2/akka-mailboxes-common-2.0.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-mailboxes-common/2.0.2/akka-mailboxes-common-2.0.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-mailboxes-common/2.0.2/akka-mailboxes-common-2.0.2-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-mailboxes-common_2.10/2.1.2/akka-mailboxes-common_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.typesafe.akka:akka-persistence-experimental_2.10:2.3.10">
@@ -439,17 +339,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-persistence-experimental_2.10/2.3.10/akka-persistence-experimental_2.10-2.3.10-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.typesafe.akka:akka-remote:2.0.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote/2.0.2/akka-remote-2.0.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote/2.0.2/akka-remote-2.0.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote/2.0.2/akka-remote-2.0.2-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.typesafe.akka:akka-remote_2.10:2.1.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote_2.10/2.1.2/akka-remote_2.10-2.1.2.jar!/" />
@@ -459,39 +348,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote_2.10/2.1.2/akka-remote_2.10-2.1.2-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-remote_2.10:2.1.4">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-remote_2.10/2.1.4/akka-remote_2.10-2.1.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-testkit:2.0.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit/2.0.1/akka-testkit-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit/2.0.1/akka-testkit-2.0.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit/2.0.1/akka-testkit-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.typesafe.akka:akka-testkit:2.0.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit/2.0.2/akka-testkit-2.0.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit/2.0.2/akka-testkit-2.0.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-testkit/2.0.2/akka-testkit-2.0.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.typesafe.akka:akka-testkit_2.10:2.1.2">
@@ -516,15 +372,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-transactor_2.10/2.1.2/akka-transactor_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.typesafe.akka:akka-zeromq:2.0.2">
+    <library name="Maven: com.typesafe.akka:akka-zeromq_2.10:2.1.2">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-zeromq/2.0.2/akka-zeromq-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-zeromq_2.10/2.1.2/akka-zeromq_2.10-2.1.2.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-zeromq/2.0.2/akka-zeromq-2.0.2-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-zeromq_2.10/2.1.2/akka-zeromq_2.10-2.1.2-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-zeromq/2.0.2/akka-zeromq-2.0.2-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-zeromq_2.10/2.1.2/akka-zeromq_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.typesafe:config:1.0.0">
@@ -547,61 +403,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/typesafe/config/1.3.0/config-1.3.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: commons-codec:commons-codec:1.4">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: commons-io:commons-io:1.4">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/1.4/commons-io-1.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: commons-io:commons-io:2.0.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.0.1/commons-io-2.0.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.0.1/commons-io-2.0.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.0.1/commons-io-2.0.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: commons-logging:commons-logging:1.1.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: io.netty:netty:3.3.0.Final">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.3.0.Final/netty-3.3.0.Final.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.3.0.Final/netty-3.3.0.Final-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty/3.3.0.Final/netty-3.3.0.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: io.netty:netty:3.5.8.Final">
@@ -637,28 +438,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: net.databinder:dispatch-json_2.9.1:0.8.5">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/databinder/dispatch-json_2.9.1/0.8.5/dispatch-json_2.9.1-0.8.5.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/databinder/dispatch-json_2.9.1/0.8.5/dispatch-json_2.9.1-0.8.5-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/databinder/dispatch-json_2.9.1/0.8.5/dispatch-json_2.9.1-0.8.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: net.debasishg:sjson_2.9.1:0.15">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/debasishg/sjson_2.9.1/0.15/sjson_2.9.1-0.15.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/net/debasishg/sjson_2.9.1/0.15/sjson_2.9.1-0.15-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/net/debasishg/sjson_2.9.1/0.15/sjson_2.9.1-0.15-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: net.java.dev.jna:jna:3.0.9">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/3.0.9/jna-3.0.9.jar!/" />
@@ -668,28 +447,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/3.0.9/jna-3.0.9-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.apache.httpcomponents:httpclient:4.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.1/httpclient-4.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.1/httpclient-4.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.1/httpclient-4.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.apache.httpcomponents:httpcore:4.1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.1/httpcore-4.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.fusesource.hawtjni:hawtjni-runtime:1.8">
@@ -813,17 +570,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/iq80/leveldb/leveldb/0.5/leveldb-0.5-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.objenesis:objenesis:1.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/1.2/objenesis-1.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/1.2/objenesis-1.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/1.2/objenesis-1.2-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.scala-lang:scala-library:2.10.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.1/scala-library-2.10.1.jar!/" />
@@ -852,46 +598,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.scala-lang:scala-library:2.10.5">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.scala-lang:scala-library:2.9.1-1">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.1-1/scala-library-2.9.1-1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.scala-lang:scala-library:2.9.2" type="Scala">
-      <properties>
-        <option name="languageLevel" value="Scala_2_9" />
-        <compiler-classpath>
-          <root url="file://$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.9.2/scala-compiler-2.9.2.jar" />
-          <root url="file://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar" />
-        </compiler-classpath>
-      </properties>
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.scala-lang:scala-reflect:2.10.3">
@@ -927,17 +633,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.10/2.1.2/scalatest_2.10-2.1.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.scalatest:scalatest_2.9.2:2.0.M5">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.9.2/2.0.M5/scalatest_2.9.2-2.0.M5.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.9.2/2.0.M5/scalatest_2.9.2-2.0.M5-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/scalatest/scalatest_2.9.2/2.0.M5/scalatest_2.9.2-2.0.M5-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.slf4j:slf4j-api:1.6.4">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar!/" />
@@ -960,26 +655,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/uncommons/maths/uncommons-maths/1.2.2a/uncommons-maths-1.2.2a-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.zeromq:zeromq-scala-binding_2.9.1:0.0.6">
+    <library name="Maven: org.zeromq:zeromq-scala-binding_2.10:0.0.7">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/zeromq/zeromq-scala-binding_2.9.1/0.0.6/zeromq-scala-binding_2.9.1-0.0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/zeromq/zeromq-scala-binding_2.10/0.0.7/zeromq-scala-binding_2.10-0.0.7.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/zeromq/zeromq-scala-binding_2.9.1/0.0.6/zeromq-scala-binding_2.9.1-0.0.6-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/zeromq/zeromq-scala-binding_2.10/0.0.7/zeromq-scala-binding_2.10-0.0.7-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/zeromq/zeromq-scala-binding_2.9.1/0.0.6/zeromq-scala-binding_2.9.1-0.0.6-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: voldemort.store.compress:h2-lzf:1.0">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/voldemort/store/compress/h2-lzf/1.0/h2-lzf-1.0.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/voldemort/store/compress/h2-lzf/1.0/h2-lzf-1.0-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/voldemort/store/compress/h2-lzf/1.0/h2-lzf-1.0-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/zeromq/zeromq-scala-binding_2.10/0.0.7/zeromq-scala-binding_2.10-0.0.7-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

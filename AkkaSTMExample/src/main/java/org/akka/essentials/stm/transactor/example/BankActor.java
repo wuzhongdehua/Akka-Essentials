@@ -5,6 +5,7 @@ import static akka.actor.SupervisorStrategy.resume;
 import static akka.actor.SupervisorStrategy.stop;
 import static akka.pattern.Patterns.ask;
 
+import akka.actor.*;
 import scala.concurrent.duration.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -12,18 +13,17 @@ import org.akka.essentials.stm.transactor.example.msg.AccountBalance;
 import org.akka.essentials.stm.transactor.example.msg.TransferMsg;
 
 import scala.concurrent.Await;
-import akka.actor.ActorRef;
-import akka.actor.OneForOneStrategy;
-import akka.actor.Props;
-import akka.actor.SupervisorStrategy;
 import akka.actor.SupervisorStrategy.Directive;
-import akka.actor.UntypedActor;
 import akka.japi.Function;
 import akka.transactor.CoordinatedTransactionException;
 
 public class BankActor extends UntypedActor {
 
-	ActorRef transfer = getContext().actorOf(new Props(TransferActor.class),
+	ActorRef transfer = getContext().actorOf(new Props(new UntypedActorFactory() {
+				public UntypedActor create() {
+					return new TransferActor();
+				}
+			}),
 			"TransferActor");
 
 	@Override

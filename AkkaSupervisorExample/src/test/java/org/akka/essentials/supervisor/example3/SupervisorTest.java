@@ -2,14 +2,11 @@ package org.akka.essentials.supervisor.example3;
 
 import java.util.concurrent.TimeUnit;
 
+import akka.actor.*;
 import org.junit.Test;
 
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.actor.Terminated;
 import akka.pattern.Patterns;
 import akka.testkit.TestActorRef;
 import akka.testkit.TestKit;
@@ -26,7 +23,11 @@ public class SupervisorTest extends TestKit {
 	@Test
 	public void stopAndRestartTest() throws Exception {
 		TestActorRef<SupervisorActor> supervisor = TestActorRef.apply(
-				new Props(SupervisorActor.class), _system);
+				new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new SupervisorActor();
+					}
+				}), _system);
 		ActorRef workerActor = supervisor.underlyingActor().getWorker();
 		TestProbe probe = new TestProbe(_system);
 		probe.watch(workerActor);

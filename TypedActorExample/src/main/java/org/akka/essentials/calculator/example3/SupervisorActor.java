@@ -5,25 +5,23 @@ import static akka.actor.SupervisorStrategy.restart;
 import static akka.actor.SupervisorStrategy.resume;
 import static akka.actor.SupervisorStrategy.stop;
 
+import akka.actor.*;
 import org.akka.essentials.calculator.CalculatorInt;
 
-import akka.actor.ActorRef;
-import akka.actor.OneForOneStrategy;
-import akka.actor.Props;
-import akka.actor.SupervisorStrategy;
 import akka.actor.SupervisorStrategy.Directive;
-import akka.actor.TypedActor;
 import akka.actor.TypedActor.PostStop;
 import akka.actor.TypedActor.PreStart;
 import akka.actor.TypedActor.Receiver;
 import akka.actor.TypedActor.Supervisor;
-import akka.dispatch.Future;
 import akka.dispatch.Futures;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.Function;
 import akka.japi.Option;
-import akka.util.Duration;
+import scala.concurrent.Future;
+import scala.concurrent.duration.FiniteDuration;
+
+import java.util.concurrent.TimeUnit;
 
 public class SupervisorActor implements Receiver, CalculatorInt, PreStart,
 		PostStop, Supervisor {
@@ -33,16 +31,20 @@ public class SupervisorActor implements Receiver, CalculatorInt, PreStart,
 
 	// create a child actor under the Typed Actor context
 	ActorRef childActor = TypedActor.context().actorOf(
-			new Props(ChildActor.class), "childActor");
+			new Props(new UntypedActorFactory() {
+				public Actor create() throws Exception {
+					return new ChildActor();
+				}
+			}), "childActor");
 
 	// Non blocking request response
 	public Future<Integer> add(Integer first, Integer second) {
-		return Futures.successful(first + second, TypedActor.dispatcher());
+		return Futures.successful(first + second);
 	}
 
 	// Non blocking request response
 	public Future<Integer> subtract(Integer first, Integer second) {
-		return Futures.successful(first - second, TypedActor.dispatcher());
+		return Futures.successful(first - second);
 
 	}
 
@@ -76,7 +78,7 @@ public class SupervisorActor implements Receiver, CalculatorInt, PreStart,
 	}
 
 	private static SupervisorStrategy strategy = new OneForOneStrategy(10,
-			Duration.parse("10 second"), new Function<Throwable, Directive>() {
+			FiniteDuration.create(10, TimeUnit.SECONDS), new Function<Throwable, Directive>() {
 				public Directive apply(Throwable t) {
 					if (t instanceof ArithmeticException) {
 						return resume();

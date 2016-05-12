@@ -1,14 +1,14 @@
 package org.akka.essentials.calculator.example3
 import org.akka.essentials.calculator.CalculatorInt
-
 import akka.actor.ActorRef
 import akka.actor.ActorSystem
 import akka.actor.TypedActor
 import akka.actor.TypedProps
-import akka.dispatch.Await
 import akka.pattern.ask
 import akka.util.Timeout
-import akka.util.duration._
+
+import scala.concurrent.Await
+import scala.concurrent.duration._
 
 object CalculatorActorSystem {
   def main(args: Array[String]): Unit = {

@@ -1,9 +1,10 @@
 package org.akka.essentials.calculator
-import akka.dispatch.Future
 import akka.actor.TypedActor.Receiver
 import akka.actor.TypedActor.PreStart
 import akka.actor.TypedActor.Supervisor
 import akka.actor.TypedActor.PostStop
+
+import scala.concurrent.Future
 
 
 trait CalculatorInt extends Receiver  {

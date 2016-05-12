@@ -1,8 +1,6 @@
 package org.akka.essentials.supervisor.example3;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
+import akka.actor.*;
 
 public class MyActorSystem {
 
@@ -13,7 +11,11 @@ public class MyActorSystem {
 	public static void main(String[] args) throws Exception {
 		ActorSystem system = ActorSystem.create("faultTolerance");
 
-		ActorRef supervisor = system.actorOf(new Props(SupervisorActor.class),
+		ActorRef supervisor = system.actorOf(new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new SupervisorActor();
+					}
+				}),
 				"supervisor");
 
 		supervisor.tell(Integer.valueOf(10));

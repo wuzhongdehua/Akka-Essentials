@@ -7,7 +7,8 @@ import akka.actor.ActorRef
 import akka.actor.Actor
 import akka.actor.OneForOneStrategy
 import akka.actor.Props
-import akka.util.duration.intToDurationInt
+
+import scala.concurrent.duration._
 
 class SupervisorActor() extends Actor {
 

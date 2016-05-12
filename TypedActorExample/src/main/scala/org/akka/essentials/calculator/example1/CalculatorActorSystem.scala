@@ -3,11 +3,11 @@ package org.akka.essentials.calculator.example1
 import org.akka.essentials.calculator._
 import akka.actor.ActorSystem
 import akka.actor.TypedActor
-import akka.dispatch.Await
-import akka.dispatch.Future
-import akka.util.duration._
 import akka.actor.TypedProps
 import akka.actor.ActorRef
+
+import scala.concurrent.Await
+import scala.concurrent.duration._
 
 object CalculatorActorSystem {
 

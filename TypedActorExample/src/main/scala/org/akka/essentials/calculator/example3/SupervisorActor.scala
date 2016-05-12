@@ -1,6 +1,5 @@
 package org.akka.essentials.calculator.example3
 import org.akka.essentials.calculator.CalculatorInt
-
 import akka.actor.SupervisorStrategy._
 import akka.actor.SupervisorStrategy.Restart
 import akka.actor.TypedActor.PostStop
@@ -11,10 +10,10 @@ import akka.actor.OneForOneStrategy
 import akka.actor.Props
 import akka.actor.SupervisorStrategy
 import akka.actor.TypedActor
-import akka.dispatch.Future
-import akka.dispatch.Promise
 import akka.event.Logging
-import akka.util.duration.intToDurationInt
+
+import scala.concurrent.duration._
+import scala.concurrent.{Future, Promise}
 
 class SupervisorActor extends CalculatorInt with PreStart with PostStop with Supervisor {
 
@@ -27,10 +26,10 @@ class SupervisorActor extends CalculatorInt with PreStart with PostStop with Sup
 
 
   // Non blocking request response
-  def add(first: Int, second: Int): Future[Int] = Promise successful first + second
+  def add(first: Int, second: Int): Future[Int] = Future successful first + second
 
   // Non blocking request response
-  def subtract(first: Int, second: Int): Future[Int] = Promise successful first - second
+  def subtract(first: Int, second: Int): Future[Int] = Future successful first - second
 
   // fire and forget
   def incrementCount(): Unit = counter += 1

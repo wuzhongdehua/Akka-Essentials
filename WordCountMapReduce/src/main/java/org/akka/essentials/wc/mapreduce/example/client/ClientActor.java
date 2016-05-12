@@ -11,7 +11,7 @@ public class ClientActor extends UntypedActor {
 	private long start;
 
 	/**
-	 * @param args
+	 * @param inRemoteServer
 	 */
 	public ClientActor(ActorRef inRemoteServer) {
 

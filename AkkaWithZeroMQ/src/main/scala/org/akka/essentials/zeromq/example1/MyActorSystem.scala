@@ -1,5 +1,4 @@
 package org.akka.essentials.zeromq.example1
-import akka.dispatch.Await
 import akka.actor.ActorSystem
 import akka.util.Timeout
 import akka.actor.Props

@@ -2,7 +2,6 @@ package org.akka.essentials.zeromq.example3.client
 import akka.actor.actorRef2Scala
 import akka.actor.Actor
 import akka.actor.ActorLogging
-import akka.util.duration.intToDurationInt
 import akka.zeromq.Connect
 import akka.zeromq.Frame
 import akka.zeromq.Listener
@@ -11,6 +10,8 @@ import akka.zeromq.ZMQMessage
 import akka.zeromq.ZeroMQExtension
 import akka.actor.Cancellable
 
+import scala.concurrent.duration._
+
 case class Tick
 
 class ClientActor extends Actor with ActorLogging {
@@ -18,8 +19,9 @@ class ClientActor extends Actor with ActorLogging {
 
   var count = 0
   var cancellable: Cancellable = null
+  import scala.concurrent.ExecutionContext.Implicits.global
   override def preStart() {
-    cancellable = context.system.scheduler.schedule(1 second, 1 second, self, Tick)
+    cancellable = context.system.scheduler.schedule(FiniteDuration(1, SECONDS), FiniteDuration(1, SECONDS), self, Tick)
   }
 
   def receive: Receive = {

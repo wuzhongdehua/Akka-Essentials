@@ -2,6 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<artifactId>AkkaEssentials</artifactId>
+		<groupId>in.akkaessentials</groupId>
+		<version>1.0.0</version>
+	</parent>
+
 	<groupId>WordCountMapReduce</groupId>
 	<artifactId>org.akka.essentials.wc.mapreduce.example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -9,10 +15,6 @@
 
 	<name>WordCountMapReduce</name>
 	<url>http://maven.apache.org</url>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -24,30 +26,17 @@
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>
 			<artifactId>akka-actor_2.10</artifactId>
-			<version>2.1.2</version>
+			<version>${akka.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>
 			<artifactId>akka-remote_2.10</artifactId>
-			<version>2.1.2</version>
+			<version>${akka.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>
 			<artifactId>akka-kernel_2.10</artifactId>
-			<version>2.1.2</version>
+			<version>${akka.version}</version>
 		</dependency>
 	</dependencies>
-	<repositories>
-		<repository>
-			<id>typesafe</id>
-			<name>Typesafe Repository</name>
-			<url>http://repo.typesafe.com/typesafe/releases/</url>
-		</repository>
-        <repository>
-            <id>akka-io</id>
-            <name>Akka Io Maven2 Repository</name>
-            <url>http://repo.akka.io/releases/</url>
-        </repository>
-	</repositories>
 </project>

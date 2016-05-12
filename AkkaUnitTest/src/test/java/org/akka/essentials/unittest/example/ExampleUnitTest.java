@@ -5,7 +5,9 @@ import static akka.pattern.Patterns.ask;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
+import akka.actor.*;
 import junit.framework.Assert;
 
 import org.akka.essentials.unittest.actors.BoomActor;
@@ -18,21 +20,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.actor.Terminated;
-import akka.actor.UntypedActor;
-import akka.actor.UntypedActorFactory;
-import akka.dispatch.Await;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.testkit.TestActorRef;
 import akka.testkit.TestKit;
 import akka.testkit.TestProbe;
-import akka.util.Duration;
 
 import com.typesafe.config.ConfigFactory;
+import scala.concurrent.Await;
+import scala.concurrent.duration.FiniteDuration;
 
 public class ExampleUnitTest extends TestKit {
 
@@ -57,7 +53,11 @@ public class ExampleUnitTest extends TestKit {
 
 	@Test
 	public void testEchoActor() {
-		ActorRef echoActorRef = _system.actorOf(new Props(EchoActor.class));
+		ActorRef echoActorRef = _system.actorOf(new Props(new UntypedActorFactory() {
+			public Actor create() throws Exception {
+				return new EchoActor();
+			}
+		}));
 		// pass the reference to implicit sender testActor() otherwise
 		// message end up in dead mailbox
 		echoActorRef.tell("Hi there", super.testActor());
@@ -138,12 +138,20 @@ public class ExampleUnitTest extends TestKit {
 	public void testSupervisorStrategy1() throws Exception {
 
 		ActorRef supervisorActorRef1 = _system.actorOf(new Props(
-				SupervisorActor.class), "supervisor1");
+				new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new SupervisorActor();
+					}
+				}), "supervisor1");
 
-		Duration timeout = Duration.parse("5 second");
+		FiniteDuration timeout = FiniteDuration.create(5, TimeUnit.SECONDS);
 		// register the BoomActor with the Supervisor
 		final ActorRef child = (ActorRef) Await.result(
-				ask(supervisorActorRef1, new Props(BoomActor.class), 5000),
+				ask(supervisorActorRef1, new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new BoomActor();
+					}
+				}), 5000),
 				timeout);
 
 		child.tell(123);
@@ -155,24 +163,36 @@ public class ExampleUnitTest extends TestKit {
 	public void testSupervisorStrategy2() throws Exception {
 
 		ActorRef supervisorActorRef2 = _system.actorOf(new Props(
-				SupervisorActor.class), "supervisor2");
+				new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new SupervisorActor();
+					}
+				}), "supervisor2");
 		
 		final TestProbe probe = new TestProbe(_system);
 		// register the BoomActor with the Supervisor
 		final ActorRef child = (ActorRef) Await.result(
-				ask(supervisorActorRef2, new Props(BoomActor.class), 5000),
-				Duration.parse("5 second"));
+				ask(supervisorActorRef2, new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new BoomActor();
+					}
+				}), 5000),
+				FiniteDuration.create(5, TimeUnit.SECONDS));
 		probe.watch(child);
 		// second check
 		child.tell("do something");
-		probe.expectMsg(new Terminated(child));
+		probe.expectMsg(new Terminated(child, true, true));
 
 	}
 
 	@Test
 	public void testBoomActor() {
 		final TestActorRef child = TestActorRef.apply(
-				new Props(BoomActor.class), _system);
+				new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new BoomActor();
+					}
+				}), _system);
 		try {
 			child.receive("do something");
 			// should not reach here

@@ -2,7 +2,6 @@ package org.akka.essentials.zeromq.example2
 import akka.actor.actorRef2Scala
 import akka.actor.Actor
 import akka.actor.ActorLogging
-import akka.util.duration.intToDurationInt
 import akka.zeromq.Bind
 import akka.zeromq.Frame
 import akka.zeromq.HighWatermark
@@ -12,6 +11,9 @@ import akka.zeromq.ZeroMQExtension
 import scala.util.Random
 import akka.zeromq.Listener
 import akka.actor.Cancellable
+
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext.Implicits.global
 
 case class Tick
 
@@ -23,7 +25,7 @@ class RouterActor extends Actor with ActorLogging {
   var count = 0
   var cancellable: Cancellable = null
   override def preStart() {
-    cancellable = context.system.scheduler.schedule(1 second, 1 second, self, Tick)
+    cancellable = context.system.scheduler.schedule(FiniteDuration(1, SECONDS), FiniteDuration(1, SECONDS), self, Tick)
   }
   def receive: Receive = {
     case Tick =>

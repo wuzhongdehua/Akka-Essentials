@@ -2,15 +2,12 @@ package org.akka.essentials.supervisor.example1;
 
 import java.util.concurrent.TimeUnit;
 
+import akka.actor.*;
 import org.akka.essentials.supervisor.example1.MyActorSystem.Result;
 import org.junit.Test;
 
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.actor.Terminated;
 import akka.pattern.Patterns;
 import akka.testkit.TestActorRef;
 import akka.testkit.TestKit;
@@ -19,7 +16,11 @@ import akka.testkit.TestProbe;
 public class SupervisorTest extends TestKit {
 	static ActorSystem _system = ActorSystem.create("faultTolerance");
 	TestActorRef<SupervisorActor> supervisor = TestActorRef.apply(new Props(
-			SupervisorActor.class), _system);
+			new UntypedActorFactory() {
+				public Actor create() throws Exception {
+					return new SupervisorActor();
+				}
+			}), _system);
 
 	public SupervisorTest() {
 		super(_system);
@@ -40,7 +41,11 @@ public class SupervisorTest extends TestKit {
 	@Test
 	public void resumeTest() throws Exception {
 		TestActorRef<SupervisorActor> supervisor = TestActorRef.apply(
-				new Props(SupervisorActor.class), _system);
+				new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new SupervisorActor();
+					}
+				}), _system);
 
 		//first send a correct message
 		supervisor.tell(Integer.valueOf(8));

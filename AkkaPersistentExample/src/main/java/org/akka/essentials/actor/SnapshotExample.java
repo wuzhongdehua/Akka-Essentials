@@ -1,11 +1,8 @@
 package org.akka.essentials.actor;
 
+import akka.actor.*;
 import org.akka.essentials.data.OperationCmd;
 import org.akka.essentials.data.Operator;
-
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
 
 public class SnapshotExample {
 
@@ -13,7 +10,11 @@ public class SnapshotExample {
 		final ActorSystem system = ActorSystem.create();
 
 		final ActorRef calculationActor = system.actorOf(
-				Props.create(CalculationActor.class), "calculationActor-java");
+				Props.create(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new CalculationActor();
+					}
+				}), "calculationActor-java");
 
 		calculationActor.tell(new OperationCmd(Operator.ADD, 5), null);
 		calculationActor.tell(new OperationCmd(Operator.ADD, 7), null);

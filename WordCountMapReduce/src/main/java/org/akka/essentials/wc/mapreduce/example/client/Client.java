@@ -1,10 +1,6 @@
 package org.akka.essentials.wc.mapreduce.example.client;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.actor.UntypedActor;
-import akka.actor.UntypedActorFactory;
+import akka.actor.*;
 import akka.kernel.Bootable;
 
 import com.typesafe.config.ConfigFactory;
@@ -22,7 +18,11 @@ public class Client implements Bootable {
 				ConfigFactory.load().getConfig("WCMapReduceClientApp"));
 
 		final ActorRef fileReadActor = system.actorOf(new Props(
-				FileReadActor.class));
+				new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new FileReadActor();
+					}
+				}));
 
 		final ActorRef remoteActor = system
 				.actorFor("akka://WCMapReduceApp@127.0.0.1:2552/user/WCMapReduceActor");

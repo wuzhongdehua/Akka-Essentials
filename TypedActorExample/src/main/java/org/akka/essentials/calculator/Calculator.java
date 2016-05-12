@@ -5,11 +5,11 @@ import akka.actor.TypedActor;
 import akka.actor.TypedActor.PostStop;
 import akka.actor.TypedActor.PreStart;
 import akka.actor.TypedActor.Receiver;
-import akka.dispatch.Future;
 import akka.dispatch.Futures;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.japi.Option;
+import scala.concurrent.Future;
 
 public class Calculator implements Receiver, CalculatorInt, PreStart, PostStop {
 
@@ -18,12 +18,12 @@ public class Calculator implements Receiver, CalculatorInt, PreStart, PostStop {
 
 	// Non blocking request response
 	public Future<Integer> add(Integer first, Integer second) {
-		return Futures.successful(first + second, TypedActor.dispatcher());
+		return Futures.successful(first + second);
 	}
 
 	// Non blocking request response
 	public Future<Integer> subtract(Integer first, Integer second) {
-		return Futures.successful(first - second, TypedActor.dispatcher());
+		return Futures.successful(first - second);
 
 	}
 

@@ -1,32 +1,32 @@
 package org.akka.essentials.unittest.example
 
 import java.util.Random
+
 import org.junit.runner.RunWith
 import org.junit.Assert
-import org.scalatest.junit.ShouldMatchersForJUnit
-import org.scalatest.matchers.MustMatchers
-import org.scalatest.BeforeAndAfterAll
-import org.scalatest.WordSpec
 import com.typesafe.config.ConfigFactory
 import akka.actor.actorRef2Scala
 import akka.actor.ActorRef
 import akka.actor.ActorSystem
 import akka.actor.Props
 import akka.actor.Terminated
-import akka.dispatch.Await
 import akka.pattern.ask
 import akka.testkit.CallingThreadDispatcher
 import akka.testkit.ImplicitSender
 import akka.testkit.TestActorRef
 import akka.testkit.TestKit
 import akka.testkit.TestProbe
-import akka.util.duration.intToDurationInt
 import akka.util.Timeout
-import org.scalatest.junit.JUnitRunner
+
+import scala.concurrent.duration._
+import org.scalatest.{BeforeAndAfterAll, MustMatchers, WordSpec}
+import org.scalatest.junit.{JUnitRunner, ShouldMatchersForJUnit}
+
+import scala.concurrent.Await
 
 @RunWith(classOf[JUnitRunner])
 class ExampleUnitTest(_system: ActorSystem) extends TestKit(_system) with ImplicitSender
-  with WordSpec with MustMatchers with BeforeAndAfterAll with ShouldMatchersForJUnit {
+  with MustMatchers with BeforeAndAfterAll with ShouldMatchersForJUnit {
 
   def this() = this(ActorSystem("TestSys", ConfigFactory
     .load().getConfig("TestSys")))

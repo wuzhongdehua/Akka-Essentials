@@ -1,8 +1,6 @@
 package org.akka.essentials.stm.transactor.example2;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
+import akka.actor.*;
 import akka.testkit.TestKit;
 import org.akka.essentials.stm.transactor.example2.msg.AccountBalance;
 import org.akka.essentials.stm.transactor.example2.msg.AccountCredit;
@@ -24,7 +22,12 @@ public class BankTransactorTest extends TestKit {
 
     @Test
     public void successTest() throws Exception {
-        ActorRef bank = _system.actorOf(new Props(BankActor.class));
+        ActorRef bank = _system.actorOf(new Props(new UntypedActorFactory() {
+            @Override
+            public Actor create() throws Exception {
+                return new BankActor();
+            }
+        }));
         bank.tell(new TransferMsg(Float.valueOf("1777")));
 
         AccountBalance balance = (AccountBalance) Await.result(
@@ -45,7 +48,12 @@ public class BankTransactorTest extends TestKit {
 
     @Test
     public void failureTest() throws Exception {
-        ActorRef bank = _system.actorOf(new Props(BankActor.class));
+        ActorRef bank = _system.actorOf(new Props(new UntypedActorFactory() {
+            @Override
+            public Actor create() throws Exception {
+                return new BankActor();
+            }
+        }));
 
         bank.tell(new TransferMsg(Float.valueOf("5500")));
 
@@ -70,7 +78,12 @@ public class BankTransactorTest extends TestKit {
 
     @Test
     public void accountTest() throws Exception {
-        ActorRef bank = _system.actorOf(new Props(BankActor.class));
+        ActorRef bank = _system.actorOf(new Props(new UntypedActorFactory() {
+            @Override
+            public Actor create() throws Exception {
+                return new BankActor();
+            }
+        }));
 
         bank.tell(new AccountDebit(Float.parseFloat("1000")));
         bank.tell(new AccountCredit(Float.parseFloat("1000")));

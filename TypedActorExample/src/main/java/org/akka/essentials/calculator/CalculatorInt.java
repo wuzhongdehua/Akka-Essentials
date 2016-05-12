@@ -1,7 +1,7 @@
 package org.akka.essentials.calculator;
 
-import akka.dispatch.Future;
 import akka.japi.Option;
+import scala.concurrent.Future;
 
 public interface CalculatorInt {
 

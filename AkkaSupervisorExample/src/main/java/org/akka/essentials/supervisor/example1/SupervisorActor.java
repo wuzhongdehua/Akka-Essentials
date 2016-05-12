@@ -5,15 +5,11 @@ import static akka.actor.SupervisorStrategy.restart;
 import static akka.actor.SupervisorStrategy.resume;
 import static akka.actor.SupervisorStrategy.stop;
 
+import akka.actor.*;
 import org.akka.essentials.supervisor.example1.MyActorSystem.Result;
 
 import scala.concurrent.duration.Duration;
-import akka.actor.ActorRef;
-import akka.actor.OneForOneStrategy;
-import akka.actor.Props;
-import akka.actor.SupervisorStrategy;
 import akka.actor.SupervisorStrategy.Directive;
-import akka.actor.UntypedActor;
 import akka.japi.Function;
 
 
@@ -22,7 +18,11 @@ public class SupervisorActor extends UntypedActor {
 	public ActorRef childActor;
 
 	public SupervisorActor() {
-		childActor = getContext().actorOf(new Props(WorkerActor.class),
+		childActor = getContext().actorOf(new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new WorkerActor();
+					}
+				}),
 				"workerActor");
 	}
 

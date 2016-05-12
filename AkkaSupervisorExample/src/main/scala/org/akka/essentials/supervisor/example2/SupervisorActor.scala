@@ -2,16 +2,17 @@ package org.akka.essentials.supervisor.example2
 import akka.actor.Actor
 import akka.actor.ActorLogging
 import akka.actor.Props
-import akka.dispatch.Future
 import akka.pattern.ask
 import akka.util.Timeout
-import akka.dispatch.Await
 import akka.actor.AllForOneStrategy
+
+import scala.concurrent.duration._
+
 
 class SupervisorActor extends Actor with ActorLogging {
   import akka.actor.OneForOneStrategy
   import akka.actor.SupervisorStrategy._
-  import akka.util.duration._
+
   import org.akka.essentials.supervisor.example2.Result
 
   val workerActor1 = context.actorOf(Props[WorkerActor1], name = "workerActor1")

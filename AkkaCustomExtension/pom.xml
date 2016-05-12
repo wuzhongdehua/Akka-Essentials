@@ -2,6 +2,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<artifactId>AkkaEssentials</artifactId>
+		<groupId>in.akkaessentials</groupId>
+		<version>1.0.0</version>
+	</parent>
+
 	<groupId>AkkaCustomExtension</groupId>
 	<artifactId>AkkaCustomExtension</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -18,7 +24,7 @@
 		<dependency>
 			<groupId>com.typesafe.akka</groupId>
 			<artifactId>akka-actor_2.10</artifactId>
-			<version>2.1.2</version>
+			<version>${akka.version}</version>
 		</dependency>
 	</dependencies>
 	<repositories>

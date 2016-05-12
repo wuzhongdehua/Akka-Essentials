@@ -3,13 +3,16 @@ package org.akka.essentials.zeromq.example4;
 import akka.actor.ActorRef;
 import akka.actor.Cancellable;
 import akka.actor.UntypedActor;
-import akka.util.Duration;
 import akka.zeromq.Bind;
 import akka.zeromq.Frame;
 import akka.zeromq.Listener;
 import akka.zeromq.SocketOption;
 import akka.zeromq.ZMQMessage;
 import akka.zeromq.ZeroMQExtension;
+import scala.concurrent.duration.FiniteDuration;
+import scala.concurrent.impl.ExecutionContextImpl;
+
+import java.util.concurrent.TimeUnit;
 
 public class PushActor extends UntypedActor {
 	public static final Object TICK = "TICK";
@@ -26,8 +29,8 @@ public class PushActor extends UntypedActor {
 		cancellable = getContext()
 				.system()
 				.scheduler()
-				.schedule(Duration.parse("1 second"),
-						Duration.parse("1 second"), getSelf(), TICK);
+				.schedule(FiniteDuration.create(1, TimeUnit.SECONDS),
+						FiniteDuration.create(1, TimeUnit.SECONDS), getSelf(), TICK, ExecutionContextImpl.fromExecutor(null, null));
 	}
 
 	@Override

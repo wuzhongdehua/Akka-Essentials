@@ -4,11 +4,13 @@ import akka.actor.ActorLogging
 import akka.actor.Address
 import akka.actor.Deploy
 import akka.actor.Props
-import akka.dispatch.Await
 import akka.pattern.ask
 import akka.remote.RemoteScope
-import akka.util.duration.intToDurationInt
 import akka.util.Timeout
+
+import scala.concurrent.Await
+import scala.concurrent.duration._
+
 
 class LocalActor extends Actor with ActorLogging {
 

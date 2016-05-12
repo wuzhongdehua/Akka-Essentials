@@ -10,7 +10,9 @@ import akka.actor.SupervisorStrategy;
 import akka.actor.SupervisorStrategy.Directive;
 import akka.actor.UntypedActor;
 import akka.japi.Function;
-import akka.util.Duration;
+import scala.concurrent.duration.FiniteDuration;
+
+import java.util.concurrent.TimeUnit;
 
 public class SupervisorActor extends UntypedActor {
 
@@ -21,7 +23,7 @@ public class SupervisorActor extends UntypedActor {
 	}
 
 	private static SupervisorStrategy strategy = new OneForOneStrategy(10,
-			Duration.parse("10 second"), new Function<Throwable, Directive>() {
+			FiniteDuration.create(10, TimeUnit.SECONDS), new Function<Throwable, Directive>() {
 				public Directive apply(Throwable t) {
 					if (t instanceof IllegalArgumentException) {
 						return stop();

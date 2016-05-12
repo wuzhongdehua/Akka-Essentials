@@ -1,7 +1,9 @@
 package org.akka.essentials.stm.transactor.example;
 
+import akka.actor.Actor;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import akka.actor.UntypedActorFactory;
 import akka.testkit.TestActorRef;
 import akka.testkit.TestKit;
 import org.akka.essentials.stm.transactor.example.msg.AccountBalance;
@@ -23,7 +25,12 @@ public class BankTest extends TestKit {
     @Test
     public void successTest() throws Exception {
         TestActorRef<BankActor> bank = TestActorRef.apply(new Props(
-                BankActor.class), _system);
+                new UntypedActorFactory() {
+                    @Override
+                    public Actor create() throws Exception {
+                        return new BankActor();
+                    }
+                }), _system);
 
         bank.tell(new TransferMsg(Float.valueOf("1777")));
 
@@ -45,7 +52,12 @@ public class BankTest extends TestKit {
     @Test
     public void failureTest() throws Exception {
         TestActorRef<BankActor> bank = TestActorRef.apply(new Props(
-                BankActor.class), _system);
+                new UntypedActorFactory() {
+                    @Override
+                    public Actor create() throws Exception {
+                        return new BankActor();
+                    }
+                }), _system);
 
         bank.tell(new TransferMsg(Float.valueOf("1500")));
 

@@ -2,11 +2,9 @@ package org.akka.essentials.supervisor.example1;
 
 import java.util.concurrent.TimeUnit;
 
+import akka.actor.*;
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.pattern.Patterns;
@@ -28,7 +26,11 @@ public class MyActorSystem {
 
 		Integer originalValue = Integer.valueOf(0);
 
-		ActorRef supervisor = system.actorOf(new Props(SupervisorActor.class),
+		ActorRef supervisor = system.actorOf(new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new SupervisorActor();
+					}
+				}),
 				"supervisor");
 
 		log.info("Sending value 8, no exceptions should be thrown! ");

@@ -1,15 +1,16 @@
 package org.akka.essentials.stm.transactor.example;
 
+import akka.actor.*;
 import org.akka.essentials.stm.transactor.example.msg.AccountBalance;
 import org.akka.essentials.stm.transactor.example.msg.TransferMsg;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-
 public class BankApplication {
 	ActorSystem _system = ActorSystem.apply("STM-Example");
-	ActorRef bank = _system.actorOf(new Props(BankActor.class), "BankActor");
+	ActorRef bank = _system.actorOf(new Props(new UntypedActorFactory() {
+		public UntypedActor create() {
+			return new BankActor();
+		}
+	}), "BankActor");
 
 	public static void main(String args[]) {
 

@@ -1,7 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>AkkaEssentials</artifactId>
+        <groupId>in.akkaessentials</groupId>
+        <version>1.0.0</version>
+    </parent>
 
+    <modelVersion>4.0.0</modelVersion>
   <groupId>ClientSerceExample</groupId>
   <artifactId>org-akka-essentials-clientserver-sample</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -9,10 +14,6 @@
 
   <name>ClientSerceExample</name>
   <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <dependencies>
     <dependency>
@@ -22,31 +23,19 @@
       <scope>test</scope>
     </dependency>
      <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-actor</artifactId>
-            <version>2.0.2</version>
-        </dependency>
-          <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-remote</artifactId>
-            <version>2.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.typesafe.akka</groupId>
-            <artifactId>akka-kernel</artifactId>
-            <version>2.0.2</version>
-        </dependency>
+         <groupId>com.typesafe.akka</groupId>
+         <artifactId>akka-actor_2.10</artifactId>
+         <version>${akka.version}</version>
+     </dependency>
+      <dependency>
+          <groupId>com.typesafe.akka</groupId>
+          <artifactId>akka-remote_2.10</artifactId>
+          <version>${akka.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.typesafe.akka</groupId>
+          <artifactId>akka-kernel_2.10</artifactId>
+          <version>${akka.version}</version>
+      </dependency>
   </dependencies>
-   <repositories>
-        <repository>
-            <id>typesafe</id>
-            <name>Typesafe Repository</name>
-            <url>http://repo.typesafe.com/typesafe/releases/</url>
-        </repository>
-        <repository>
-            <id>akka-io</id>
-            <name>Akka Io Maven2 Repository</name>
-            <url>http://repo.akka.io/releases/</url>
-        </repository>
-    </repositories>
 </project>

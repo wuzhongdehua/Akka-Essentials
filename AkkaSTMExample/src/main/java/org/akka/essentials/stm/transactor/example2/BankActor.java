@@ -5,24 +5,25 @@ import static akka.actor.SupervisorStrategy.resume;
 import static akka.actor.SupervisorStrategy.stop;
 import static akka.pattern.Patterns.ask;
 
+import akka.actor.*;
 import org.akka.essentials.stm.transactor.example2.msg.AccountBalance;
 import org.akka.essentials.stm.transactor.example2.msg.AccountMsg;
 import org.akka.essentials.stm.transactor.example2.msg.TransferMsg;
 
 import scala.concurrent.Await;
 import scala.concurrent.duration.Duration;
-import akka.actor.ActorRef;
-import akka.actor.OneForOneStrategy;
-import akka.actor.Props;
-import akka.actor.SupervisorStrategy;
 import akka.actor.SupervisorStrategy.Directive;
-import akka.actor.UntypedActor;
 import akka.japi.Function;
 import akka.transactor.CoordinatedTransactionException;
 
 public class BankActor extends UntypedActor {
 
-	ActorRef transfer = getContext().actorOf(new Props(TransferActor.class),
+	ActorRef transfer = getContext().actorOf(new Props(new UntypedActorFactory() {
+				@Override
+				public Actor create() throws Exception {
+					return new TransferActor();
+				}
+			}),
 			"TransferActor");
 
 	@Override
@@ -45,7 +46,6 @@ public class BankActor extends UntypedActor {
 	// catch the exceptions and apply the right strategy, in this case resume()
 	private static SupervisorStrategy strategy = new OneForOneStrategy(10,
 			Duration.create("10 second"), new Function<Throwable, Directive>() {
-
 				public Directive apply(Throwable t) {
 					if (t instanceof CoordinatedTransactionException) {
 						return resume();

@@ -7,18 +7,20 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.TypedActor;
 import akka.actor.TypedProps;
-import akka.dispatch.Await;
-import akka.dispatch.Future;
 import akka.japi.Option;
-import akka.util.Duration;
 import akka.util.Timeout;
+import scala.concurrent.Await;
+import scala.concurrent.Future;
+import scala.concurrent.duration.FiniteDuration;
+
+import java.util.concurrent.TimeUnit;
 
 public class CalculatorActorSytem {
 
 	public static void main(String[] args) throws Exception {
 		ActorSystem _system = ActorSystem.create("TypedActorsExample");
 
-		Timeout timeout = new Timeout(Duration.parse("5 seconds"));
+		Timeout timeout = new Timeout(FiniteDuration.create(5, TimeUnit.SECONDS));
 
 		CalculatorInt calculator = TypedActor.get(_system).typedActorOf(
 				new TypedProps<Calculator>(CalculatorInt.class,

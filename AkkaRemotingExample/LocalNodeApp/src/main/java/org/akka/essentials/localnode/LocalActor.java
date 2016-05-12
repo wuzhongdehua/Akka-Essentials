@@ -2,17 +2,18 @@ package org.akka.essentials.localnode;
 
 import akka.actor.ActorRef;
 import akka.actor.UntypedActor;
-import akka.dispatch.Await;
-import akka.dispatch.Future;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.pattern.Patterns;
-import akka.util.Duration;
 import akka.util.Timeout;
+import scala.concurrent.Await;
+import scala.concurrent.Future;
+
+import java.util.concurrent.TimeUnit;
 
 public class LocalActor extends UntypedActor {
 	LoggingAdapter log = Logging.getLogger(getContext().system(), this);
-	Timeout timeout = new Timeout(Duration.parse("5 seconds"));
+	Timeout timeout = new Timeout(5, TimeUnit.SECONDS);
 
 	ActorRef remoteActor;
 

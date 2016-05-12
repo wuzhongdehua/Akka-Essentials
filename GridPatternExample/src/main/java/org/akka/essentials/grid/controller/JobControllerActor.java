@@ -3,17 +3,13 @@ package org.akka.essentials.grid.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import akka.actor.*;
 import org.akka.essentials.grid.StartWorker;
 import org.akka.essentials.grid.StopWorker;
 import org.akka.essentials.grid.Task;
 import org.akka.essentials.grid.TaskFinished;
 import org.akka.essentials.grid.worker.WorkerActor;
 
-import akka.actor.ActorRef;
-import akka.actor.Address;
-import akka.actor.AddressFromURIString;
-import akka.actor.Props;
-import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
 import akka.remote.routing.RemoteRouterConfig;
@@ -108,7 +104,11 @@ public class JobControllerActor extends UntypedActor {
 
 		// update the workerRouter actor with the information on all workers
 		workerRouterActor = getContext().system().actorOf(
-				new Props(WorkerActor.class).withRouter(new RemoteRouterConfig(
+				new Props(new UntypedActorFactory() {
+					public Actor create() throws Exception {
+						return new WorkerActor();
+					}
+				}).withRouter(new RemoteRouterConfig(
 						new RoundRobinRouter(workerAddress.length),
 						workerAddress)));
 
@@ -139,8 +139,11 @@ public class JobControllerActor extends UntypedActor {
 					addressNodes);
 
 			workerRouterActor = getContext().system().actorOf(
-					new Props(WorkerActor.class)
-							.withRouter(new RemoteRouterConfig(
+					new Props(new UntypedActorFactory() {
+						public Actor create() throws Exception {
+							return new WorkerActor();
+						}
+					}).withRouter(new RemoteRouterConfig(
 									new RoundRobinRouter(workerAddress.length),
 									workerAddress)));
 		} else

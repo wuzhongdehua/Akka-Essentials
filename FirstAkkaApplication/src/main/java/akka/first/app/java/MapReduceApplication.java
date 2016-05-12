@@ -1,8 +1,7 @@
 package akka.first.app.java;
 
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
+import akka.actor.*;
+import akka.first.app.java.actors.AggregateActor;
 import akka.first.app.java.actors.MasterActor;
 import akka.first.app.java.messages.Result;
 
@@ -12,7 +11,11 @@ public class MapReduceApplication {
 
 		ActorSystem _system = ActorSystem.create("MapReduceApp");
 		
-		ActorRef master = _system.actorOf(new Props(MasterActor.class),"master");
+		ActorRef master = _system.actorOf(new Props(new UntypedActorFactory() {
+			public UntypedActor create() {
+				return new MasterActor();
+			}
+		}),"master");
 		
 		master.tell("The quick brown fox tried to jump over the lazy dog and fell on the dog");
 		master.tell("Dog is man's best friend");

@@ -3,13 +3,13 @@ package org.akka.essentials.unittest.example
 import org.junit.Assert
 import com.typesafe.config.ConfigFactory
 import akka.actor.ActorSystem
-import akka.dispatch.Await
 import akka.pattern.ask
 import akka.testkit.TestActorRef
-import akka.util.duration.intToDurationInt
 import akka.util.Timeout
 import junit.framework.TestCase
 import org.junit.runner.RunWith
+
+import scala.concurrent.Await
 
 class TickTockTest extends TestCase {
 

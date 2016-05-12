@@ -9,7 +9,11 @@ import akka.first.app.java.messages.Result;
 public class MasterActor extends UntypedActor {
 
 	private ActorRef aggregateActor = getContext().actorOf(
-			new Props(AggregateActor.class), "aggregate");
+			new Props(new UntypedActorFactory() {
+				public UntypedActor create() {
+					return new AggregateActor();
+				}
+			}), "aggregate");
 
 	private ActorRef reduceActor = getContext().actorOf(
 			new Props(new UntypedActorFactory() {

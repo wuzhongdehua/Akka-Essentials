@@ -5,13 +5,16 @@ import akka.actor.Cancellable;
 import akka.actor.UntypedActor;
 import akka.event.Logging;
 import akka.event.LoggingAdapter;
-import akka.util.Duration;
 import akka.zeromq.Connect;
 import akka.zeromq.Frame;
 import akka.zeromq.Listener;
 import akka.zeromq.SocketOption;
 import akka.zeromq.ZMQMessage;
 import akka.zeromq.ZeroMQExtension;
+import scala.concurrent.duration.FiniteDuration;
+import scala.concurrent.impl.ExecutionContextImpl;
+
+import java.util.concurrent.TimeUnit;
 
 public class ClientActor extends UntypedActor {
 	public static final Object TICK = "TICK";
@@ -28,8 +31,8 @@ public class ClientActor extends UntypedActor {
 		cancellable = getContext()
 				.system()
 				.scheduler()
-				.schedule(Duration.parse("1 second"),
-						Duration.parse("1 second"), getSelf(), TICK);
+				.schedule(FiniteDuration.create(1, TimeUnit.SECONDS),
+						FiniteDuration.create(1, TimeUnit.SECONDS), getSelf(), TICK, ExecutionContextImpl.fromExecutor(null, null));
 	}
 
 	@Override

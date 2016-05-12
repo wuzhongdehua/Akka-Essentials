@@ -6,13 +6,15 @@ import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.TypedActor;
 import akka.actor.TypedProps;
-import akka.dispatch.Await;
-import akka.dispatch.Future;
 import akka.pattern.Patterns;
-import akka.util.Duration;
 import akka.util.Timeout;
 
 import com.typesafe.config.ConfigFactory;
+import scala.concurrent.Await;
+import scala.concurrent.Future;
+import scala.concurrent.duration.FiniteDuration;
+
+import java.util.concurrent.TimeUnit;
 
 public class CalculatorActorSytem {
 
@@ -34,7 +36,7 @@ public class CalculatorActorSytem {
 		Thread.sleep(500);
 		
 		// Invoke the method and wait for result
-		Timeout timeout = new Timeout(Duration.parse("5 seconds"));
+		Timeout timeout = new Timeout(FiniteDuration.create(5, TimeUnit.SECONDS));
 	    Future<Object> future = Patterns.ask(calActor, Integer.valueOf(10), timeout);
 	    Integer result = (Integer) Await.result(future, timeout.duration());
 		
