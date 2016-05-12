@@ -44,5 +44,10 @@
 			<name>Typesafe Repository</name>
 			<url>http://repo.typesafe.com/typesafe/releases/</url>
 		</repository>
+        <repository>
+            <id>akka-io</id>
+            <name>Akka Io Maven2 Repository</name>
+            <url>http://repo.akka.io/releases/</url>
+        </repository>
 	</repositories>
 </project>
