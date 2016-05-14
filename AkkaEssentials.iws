@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="693af220-73bf-4cee-a338-23eddf74a99e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActorMessagingExample/pom.xml" afterPath="$PROJECT_DIR$/ActorMessagingExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaCustomExtension/pom.xml" afterPath="$PROJECT_DIR$/AkkaCustomExtension/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaDispatcherExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaDispatcherExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaEssentials.ipr" afterPath="$PROJECT_DIR$/AkkaEssentials.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaEssentials.iws" afterPath="$PROJECT_DIR$/AkkaEssentials.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" afterPath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" afterPath="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRouterExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaRouterExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaSTMExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSerializerExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaSerializerExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/pom.xml" afterPath="$PROJECT_DIR$/AkkaUnitTest/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/pom.xml" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientServerExample/pom.xml" afterPath="$PROJECT_DIR$/ClientServerExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DurableMailBox/pom.xml" afterPath="$PROJECT_DIR$/DurableMailBox/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstAkkaApplication/pom.xml" afterPath="$PROJECT_DIR$/FirstAkkaApplication/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/pom.xml" afterPath="$PROJECT_DIR$/GridPatternExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoadGeneratorExample/pom.xml" afterPath="$PROJECT_DIR$/LoadGeneratorExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/pom.xml" afterPath="$PROJECT_DIR$/TypedActorExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WordCountMapReduce/pom.xml" afterPath="$PROJECT_DIR$/WordCountMapReduce/pom.xml" />
     </list>
     <ignored path="AkkaEssentials.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -278,8 +260,6 @@
         <option value="$PROJECT_DIR$/AkkaCustomExtension/pom.xml" />
         <option value="$PROJECT_DIR$/AkkaDispatcherExample/pom.xml" />
         <option value="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" />
-        <option value="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" />
-        <option value="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" />
         <option value="$PROJECT_DIR$/AkkaRouterExample/pom.xml" />
         <option value="$PROJECT_DIR$/AkkaSerializerExample/pom.xml" />
         <option value="$PROJECT_DIR$/AkkaSTMExample/pom.xml" />
@@ -293,6 +273,8 @@
         <option value="$PROJECT_DIR$/LoadGeneratorExample/pom.xml" />
         <option value="$PROJECT_DIR$/TypedActorExample/pom.xml" />
         <option value="$PROJECT_DIR$/WordCountMapReduce/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" />
       </list>
     </option>
   </component>
@@ -440,6 +422,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -460,8 +444,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -948,12 +930,13 @@
       <workItem from="1463032517720" duration="2621000" />
       <workItem from="1463035253966" duration="6293000" />
       <workItem from="1463187416169" duration="470000" />
-      <workItem from="1463187992977" duration="88000" />
+      <workItem from="1463187992977" duration="446000" />
+      <workItem from="1463188454122" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18780000" />
+    <option name="totallyTimeSpent" value="19225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1257,14 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/ExampleUnitTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1303,39 +1278,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaPersistentExample/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AkkaRouterExample/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaSerializerExample/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
@@ -1435,6 +1378,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaPersistentExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaSerializerExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="46" />
           <folding />
         </state>
       </provider>
