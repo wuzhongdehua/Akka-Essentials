@@ -3,94 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="693af220-73bf-4cee-a338-23eddf74a99e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActorMessagingExample/pom.xml" afterPath="$PROJECT_DIR$/ActorMessagingExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActorMessagingExample/src/main/java/org/akka/essentials/java/future/example/TestActorSystem.java" afterPath="$PROJECT_DIR$/ActorMessagingExample/src/main/java/org/akka/essentials/java/future/example/TestActorSystem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaCustomExtension/pom.xml" afterPath="$PROJECT_DIR$/AkkaCustomExtension/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaDispatcherExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaDispatcherExample/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaEssentials.ipr" afterPath="$PROJECT_DIR$/AkkaEssentials.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaEssentials.iws" afterPath="$PROJECT_DIR$/AkkaEssentials.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaPersistentExample/src/main/java/org/akka/essentials/actor/SnapshotExample.java" afterPath="$PROJECT_DIR$/AkkaPersistentExample/src/main/java/org/akka/essentials/actor/SnapshotExample.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" afterPath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/java/org/akka/essentials/localnode/LocalActor.java" afterPath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/java/org/akka/essentials/localnode/LocalActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/java/org/akka/essentials/localnode/LocalNodeApplication.java" afterPath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/java/org/akka/essentials/localnode/LocalNodeApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/scala/org/akka/essentials/localnode/LocalActor.scala" afterPath="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/scala/org/akka/essentials/localnode/LocalActor.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" afterPath="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRouterExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaRouterExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaRouterExample/src/main/java/org/akka/essentials/java/router/example/random/Example.java" afterPath="$PROJECT_DIR$/AkkaRouterExample/src/main/java/org/akka/essentials/java/router/example/random/Example.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaSTMExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example/BankActor.java" afterPath="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example/BankActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example/BankApplication.java" afterPath="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example/BankApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example2/BankActor.java" afterPath="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example2/BankActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/src/test/java/org/akka/essentials/stm/transactor/example/BankTest.java" afterPath="$PROJECT_DIR$/AkkaSTMExample/src/test/java/org/akka/essentials/stm/transactor/example/BankTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSTMExample/src/test/java/org/akka/essentials/stm/transactor/example2/BankTransactorTest.java" afterPath="$PROJECT_DIR$/AkkaSTMExample/src/test/java/org/akka/essentials/stm/transactor/example2/BankTransactorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSerializerExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaSerializerExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSerializerExample/src/main/scala/org/akka/essentials/scala/serializer/MySerializer.scala" afterPath="$PROJECT_DIR$/AkkaSerializerExample/src/main/scala/org/akka/essentials/scala/serializer/MySerializer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/pom.xml" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example1/MyActorSystem.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example1/MyActorSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example1/SupervisorActor.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example1/SupervisorActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example2/MyActorSystem2.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example2/MyActorSystem2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example2/SupervisorActor2.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example2/SupervisorActor2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/MyActorSystem.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/MyActorSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/SupervisorActor.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/SupervisorActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example1/MyActorSystem.scala" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example1/MyActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example1/SupervisorActor.scala" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example1/SupervisorActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example2/MyActorSystem.scala" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example2/MyActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example2/SupervisorActor.scala" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example2/SupervisorActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example3/MyActorSystem.scala" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example3/MyActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example3/SupervisorActor.scala" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/main/scala/org/akka/essentials/supervisor/example3/SupervisorActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example1/SupervisorTest.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example1/SupervisorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example2/SupervisorTest.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example2/SupervisorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example3/SupervisorTest.java" afterPath="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example3/SupervisorTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/pom.xml" afterPath="$PROJECT_DIR$/AkkaUnitTest/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/src/main/java/org/akka/essentials/unittest/actors/SupervisorActor.java" afterPath="$PROJECT_DIR$/AkkaUnitTest/src/main/java/org/akka/essentials/unittest/actors/SupervisorActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/src/main/scala/org/akka/essentials/unittest/example/SupervisorActor.scala" afterPath="$PROJECT_DIR$/AkkaUnitTest/src/main/scala/org/akka/essentials/unittest/example/SupervisorActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/ExampleUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/TickTockTest.java" afterPath="$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/TickTockTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/ExampleUnitTest.scala" afterPath="$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/ExampleUnitTest.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/TickTockTest.scala" afterPath="$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/TickTockTest.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/pom.xml" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example1/PublisherActor.java" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example1/PublisherActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example2/RouterActor.java" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example2/RouterActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example3/client/ClientActor.java" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example3/client/ClientActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example4/PushActor.java" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example4/PushActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example1/MyActorSystem.scala" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example1/MyActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example1/PublisherActor.scala" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example1/PublisherActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example2/MyActorSystem.scala" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example2/MyActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example2/RouterActor.scala" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example2/RouterActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example3/client/ClientActor.scala" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example3/client/ClientActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example4/PushActor.scala" afterPath="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example4/PushActor.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientServerExample/pom.xml" afterPath="$PROJECT_DIR$/ClientServerExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientServerExample/src/main/java/org/akka/essentials/clientserver/sample/ClientActorSystem.java" afterPath="$PROJECT_DIR$/ClientServerExample/src/main/java/org/akka/essentials/clientserver/sample/ClientActorSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientServerExample/src/main/scala/org/akka/essentials/clientserver/example/ClientActor.scala" afterPath="$PROJECT_DIR$/ClientServerExample/src/main/scala/org/akka/essentials/clientserver/example/ClientActor.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DurableMailBox/pom.xml" afterPath="$PROJECT_DIR$/DurableMailBox/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstAkkaApplication/pom.xml" afterPath="$PROJECT_DIR$/FirstAkkaApplication/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstAkkaApplication/src/main/java/akka/first/app/java/MapReduceApplication.java" afterPath="$PROJECT_DIR$/FirstAkkaApplication/src/main/java/akka/first/app/java/MapReduceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FirstAkkaApplication/src/main/java/akka/first/app/java/actors/MasterActor.java" afterPath="$PROJECT_DIR$/FirstAkkaApplication/src/main/java/akka/first/app/java/actors/MasterActor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/pom.xml" afterPath="$PROJECT_DIR$/GridPatternExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/src/main/java/org/akka/essentials/grid/controller/JobControllerActor.java" afterPath="$PROJECT_DIR$/GridPatternExample/src/main/java/org/akka/essentials/grid/controller/JobControllerActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/JobControllerActor.scala" afterPath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/JobControllerActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/RemoteClientEventListener.scala" afterPath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/RemoteClientEventListener.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/WorkSchedulerActor.scala" afterPath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/WorkSchedulerActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/WorkServerActorSystem.scala" afterPath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/controller/WorkServerActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/worker/WorkerActorSystem.scala" afterPath="$PROJECT_DIR$/GridPatternExample/src/main/scala/org/akka/essentials/grid/worker/WorkerActorSystem.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LoadGeneratorExample/pom.xml" afterPath="$PROJECT_DIR$/LoadGeneratorExample/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/pom.xml" afterPath="$PROJECT_DIR$/TypedActorExample/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/Calculator.java" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/Calculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/CalculatorInt.java" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/CalculatorInt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example1/CalculatorActorSytem.java" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example1/CalculatorActorSytem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/CalculatorActorSytem.java" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/CalculatorActorSytem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/SupervisorActor.java" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/SupervisorActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example4/CalculatorActorSytem.java" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example4/CalculatorActorSytem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/Calculator.scala" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/Calculator.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/CalculatorInt.scala" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/CalculatorInt.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example1/CalculatorActorSystem.scala" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example1/CalculatorActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example3/CalculatorActorSystem.scala" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example3/CalculatorActorSystem.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example3/SupervisorActor.scala" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example3/SupervisorActor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example4/CalculatorActorSystem.scala" afterPath="$PROJECT_DIR$/TypedActorExample/src/main/scala/org/akka/essentials/calculator/example4/CalculatorActorSystem.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WordCountMapReduce/pom.xml" afterPath="$PROJECT_DIR$/WordCountMapReduce/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WordCountMapReduce/src/main/java/org/akka/essentials/wc/mapreduce/example/client/Client.java" afterPath="$PROJECT_DIR$/WordCountMapReduce/src/main/java/org/akka/essentials/wc/mapreduce/example/client/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WordCountMapReduce/src/main/java/org/akka/essentials/wc/mapreduce/example/client/ClientActor.java" afterPath="$PROJECT_DIR$/WordCountMapReduce/src/main/java/org/akka/essentials/wc/mapreduce/example/client/ClientActor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="AkkaEssentials.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -310,24 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ClientServerExample/src/main/scala/org/akka/essentials/clientserver/example/ClientActor.scala" />
-        <option value="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/src/main/java/org/akka/essentials/localnode/LocalActor.java" />
-        <option value="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example2/RouterActor.java" />
-        <option value="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example3/client/ClientActor.java" />
-        <option value="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example1/PublisherActor.java" />
-        <option value="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/java/org/akka/essentials/zeromq/example4/PushActor.java" />
-        <option value="$PROJECT_DIR$/AkkaUnitTest/src/main/scala/org/akka/essentials/unittest/example/SupervisorActor.scala" />
-        <option value="$PROJECT_DIR$/AkkaPersistentExample/src/main/java/org/akka/essentials/actor/CalculationActor.java" />
-        <option value="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" />
-        <option value="$PROJECT_DIR$/AkkaSTMExample/src/test/java/org/akka/essentials/stm/transactor/example2/BankTransactorTest.java" />
-        <option value="$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example2/BankActor.java" />
-        <option value="$PROJECT_DIR$/WordCountMapReduce/src/main/java/org/akka/essentials/wc/mapreduce/example/client/ClientActor.java" />
-        <option value="$PROJECT_DIR$/WordCountMapReduce/src/main/java/org/akka/essentials/wc/mapreduce/example/client/Client.java" />
-        <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example1/MyActorSystem.java" />
-        <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example1/SupervisorActor.java" />
-        <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example2/MyActorSystem2.java" />
-        <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example2/SupervisorActor2.java" />
-        <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/SupervisorActor.java" />
         <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/MyActorSystem.java" />
         <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example2/SupervisorTest.java" />
         <option value="$PROJECT_DIR$/AkkaSupervisorExample/src/test/java/org/akka/essentials/supervisor/example3/SupervisorTest.java" />
@@ -341,7 +255,6 @@
         <option value="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example4/CalculatorActorSytem.java" />
         <option value="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example1/CalculatorActorSytem.java" />
         <option value="$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/TickTockTest.java" />
-        <option value="$PROJECT_DIR$/TypedActorExample/pom.xml" />
         <option value="$PROJECT_DIR$/AkkaUnitTest/src/main/java/org/akka/essentials/unittest/actors/SupervisorActor.java" />
         <option value="$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/SupervisorActor.java" />
         <option value="$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/ExampleUnitTest.java" />
@@ -361,6 +274,25 @@
         <option value="$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example4/PushActor.scala" />
         <option value="$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/TickTockTest.scala" />
         <option value="$PROJECT_DIR$/AkkaUnitTest/src/test/scala/org/akka/essentials/unittest/example/ExampleUnitTest.scala" />
+        <option value="$PROJECT_DIR$/ActorMessagingExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaCustomExtension/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaDispatcherExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaPersistentExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaRouterExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaSerializerExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaSTMExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaSupervisorExample/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaUnitTest/pom.xml" />
+        <option value="$PROJECT_DIR$/AkkaWithZeroMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/ClientServerExample/pom.xml" />
+        <option value="$PROJECT_DIR$/DurableMailBox/pom.xml" />
+        <option value="$PROJECT_DIR$/FirstAkkaApplication/pom.xml" />
+        <option value="$PROJECT_DIR$/GridPatternExample/pom.xml" />
+        <option value="$PROJECT_DIR$/LoadGeneratorExample/pom.xml" />
+        <option value="$PROJECT_DIR$/TypedActorExample/pom.xml" />
+        <option value="$PROJECT_DIR$/WordCountMapReduce/pom.xml" />
       </list>
     </option>
   </component>
@@ -369,11 +301,10 @@
     <option name="SPLITTER_PROPORTION" value="0.5" />
     <profile name="Default" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LvcsProjectConfiguration">
     <option name="ADD_LABEL_ON_PROJECT_OPEN" value="true" />
@@ -432,6 +363,58 @@
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Properties FilesJava</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -457,7 +440,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -478,6 +460,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -497,11 +480,11 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java-design-patterns" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31724137" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
@@ -513,87 +496,7 @@
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="akkaessentials" />
   </component>
-  <component name="RunManager" selected="Application.TestActorSystem">
-    <configuration default="false" name="java" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.akka.essentials.java.hotswap.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.akka.essentials.java.hotswap.example.MyActorSystem" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ActorMessagingExample" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MyActorSystem" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.akka.essentials.scala.hotswap.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.akka.essentials.scala.hotswap.example.MyActorSystem" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ActorMessagingExample" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestActorSystem" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.akka.essentials.scala.future.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.akka.essentials.scala.future.example.TestActorSystem" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="ActorMessagingExample" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestApp" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.akka.essentials.custom.extension.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.akka.essentials.custom.extension.example.TestApp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="AkkaCustomExtension" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -905,52 +808,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
-      <module name="" />
-      <setting name="vmparams4" value="-Djline.terminal=NONE" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <setting name="consoleArgs" value="-usejavacp" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1035,35 +892,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.java" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MyActorSystem" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestActorSystem" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestApp" />
-    </list>
-    <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.TestActorSystem" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestApp" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MyActorSystem" />
-        <item index="3" class="java.lang.String" itemvalue="Application.java" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
@@ -1119,11 +947,13 @@
       <workItem from="1463025193467" duration="6681000" />
       <workItem from="1463032517720" duration="2621000" />
       <workItem from="1463035253966" duration="6293000" />
+      <workItem from="1463187416169" duration="470000" />
+      <workItem from="1463187992977" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18222000" />
+    <option name="totallyTimeSpent" value="18780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1135,13 +965,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49481326" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49442756" sideWeight="0.49573562" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42427385" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1149,9 +979,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25586355" sideWeight="0.49459043" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25572917" sideWeight="0.49459043" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1168,6 +997,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1243,212 +1073,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ActorMessagingExample/src/main/java/org/akka/essentials/java/future/example/OrderActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaSTMExample/src/test/java/org/akka/essentials/stm/transactor/example/BankTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-          <folding>
-            <element signature="e#846#1052#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-            <element signature="e#1837#2043#0" expanded="false" />
-            <element signature="e#2042#2043#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example2/TransferActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaSupervisorExample/src/main/java/org/akka/essentials/supervisor/example3/MyActorSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/src/main/java/org/akka/essentials/remotenode/RemoteActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaSTMExample/src/main/java/org/akka/essentials/stm/transactor/example/AccountActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaPersistentExample/src/main/java/org/akka/essentials/actor/SnapshotExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-          <folding>
-            <element signature="e#359#482#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example4/CalculatorActorSytem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/CalculatorActorSytem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2-sources.jar!/akka/actor/TypedActor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="518" column="6" selection-start-line="518" selection-start-column="6" selection-end-line="518" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/time/Duration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="385" column="27" selection-start-line="385" selection-start-column="27" selection-end-line="385" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaUnitTest/src/main/java/org/akka/essentials/unittest/actors/TickTock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypedActorExample/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaUnitTest/src/test/java/org/akka/essentials/unittest/example/TickTockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-991">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#858#973#0" expanded="false" />
-            <element signature="e#972#973#0" expanded="false" />
-            <element signature="e#1364#1479#0" expanded="false" />
-            <element signature="e#1478#1479#0" expanded="false" />
-            <element signature="e#1807#1922#0" expanded="false" />
-            <element signature="e#1921#1922#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1610">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2-sources.jar!/akka/actor/FaultHandling.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="137" column="6" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaUnitTest/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AkkaUnitTest/src/main/java/org/akka/essentials/unittest/actors/SupervisorActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <element signature="e#790#1065#0" expanded="false" />
-            <element signature="e#1064#1065#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypedActorExample/src/main/java/org/akka/essentials/calculator/example3/SupervisorActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1943">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-          <folding>
-            <element signature="e#2278#2638#0" expanded="false" />
-            <element signature="e#2637#2638#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2-sources.jar!/akka/actor/Actor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClientServerExample/src/main/java/org/akka/essentials/clientserver/sample/ClientActorSystem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="151" column="41" selection-start-line="151" selection-start-column="41" selection-end-line="151" selection-end-column="41" />
-          <folding>
-            <element signature="e#2228#2338#0" expanded="false" />
-            <element signature="e#2337#2338#0" expanded="false" />
-            <element signature="e#3493#3603#0" expanded="false" />
-            <element signature="e#3602#3603#0" expanded="false" />
-            <element signature="e#4968#5078#0" expanded="false" />
-            <element signature="e#5077#5078#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1456,9 +1084,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-528">
           <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1466,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1474,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
           <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1490,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1498,9 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1508,9 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="e#39#76#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1518,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1526,9 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="e#48#99#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1536,9 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#49#88#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1546,9 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#38#61#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,9 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="e#48#99#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1566,9 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="e#39#67#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1576,9 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1586,35 +1182,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#73#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar!/scala/concurrent/duration/Duration.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="529" column="40" selection-start-line="529" selection-start-column="32" selection-end-line="529" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2-sources.jar!/akka/actor/Scheduler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="52" column="32" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar!/scala/concurrent/duration/Duration.scala" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.10/2.1.2/akka-actor_2.10-2.1.2-sources.jar!/akka/actor/Scheduler.scala" />
     <entry file="file://$PROJECT_DIR$/AkkaWithZeroMQ/src/main/scala/org/akka/essentials/zeromq/example2/RouterActor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="27" column="119" selection-start-line="27" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
-          <folding>
-            <element signature="e#44#76#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1622,9 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="e#44#76#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1632,9 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="e#51#83#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1642,9 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-          <folding>
-            <element signature="e#44#67#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,9 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="e#46#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1662,7 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1670,7 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1678,7 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1686,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1694,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
           <caret line="92" column="63" selection-start-line="92" selection-start-column="63" selection-end-line="92" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1710,9 +1269,173 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="e#46#69#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ActorMessagingExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaCustomExtension/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaDispatcherExample/AkkaDispatcherExample.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaDispatcherExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaPersistentExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/LocalNodeApp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaRemotingExample/RemoteNodeApp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaRouterExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaSerializerExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaSTMExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaSupervisorExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaUnitTest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaWithZeroMQ/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientServerExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DurableMailBox/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirstAkkaApplication/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GridPatternExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoadGeneratorExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TypedActorExample/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WordCountMapReduce/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AkkaDispatcherExample/src/main/java/org/akka/essentials/java/dispatcher/MsgEchoActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
